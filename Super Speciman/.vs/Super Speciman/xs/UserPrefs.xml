@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{6BB34D4A-FF7F-AB60-58CC-267D421D62D1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Register.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HealthBar.cs">
     <Files>
-      <File FileName="Assets/Scripts/Login.cs" Line="119" Column="1" />
-      <File FileName="Assets/Scripts/Register.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/HealthBar.cs" Line="9" Column="30" />
+      <File FileName="Assets/Scripts/Player.cs" Line="33" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +11,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Data" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="Register.cs" selected="True" />
+                <Node name="HealthBar.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fbaa6430-8358-4293-8728-7575621da22b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a08853be-e93d-42fd-8548-9d1db0c9a3ac" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
