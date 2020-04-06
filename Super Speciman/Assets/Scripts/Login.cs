@@ -8,9 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class Login : MonoBehaviour
 {
+    public static string tempUser;
     public GameObject username;
     public GameObject password;
-    private string Username;
+    private String Username;
     private string Password;
     private string[] Lines;
 
@@ -22,13 +23,13 @@ public class Login : MonoBehaviour
         bool PW = false;
         if (Username != "")
         {
-            if (!System.IO.File.Exists(@"/Users/seifeltobgy/Desktop/Super Speciman/Assets/Data/" + Username + ".txt")){
+            if (!System.IO.File.Exists(@"/Users/seifeltobgy/Desktop/Github/Super-Speciman/Super Speciman/Assets/Data/" + Username + ".txt")){
                 Debug.LogWarning("Username Invalid!");
             }
             else
             {
                 UN = true;
-                Lines = System.IO.File.ReadAllLines(@"/Users/seifeltobgy/Desktop/Super Speciman/Assets/Data/" + Username + ".txt");
+                Lines = System.IO.File.ReadAllLines(@"/Users/seifeltobgy/Desktop/Github/Super-Speciman/Super Speciman/Assets/Data/" + Username + ".txt");
             }
         }
         else
@@ -37,7 +38,7 @@ public class Login : MonoBehaviour
         }
         if (Password != "")
         {
-            if (System.IO.File.Exists(@"/Users/seifeltobgy/Desktop/Super Speciman/Assets/Data/" + Username + ".txt"))
+            if (System.IO.File.Exists(@"/Users/seifeltobgy/Desktop/Github/Super-Speciman/Super Speciman/Assets/Data/" + Username + ".txt"))
             {
                 bool Clear = true;
                 int i = 1;
@@ -76,6 +77,7 @@ public class Login : MonoBehaviour
 
         if (UN == true && PW == true)
         {
+            tempUser = username.GetComponent<InputField>().text;
             username.GetComponent<InputField>().text = "";
             password.GetComponent<InputField>().text = "";
             print("Login Successful!");

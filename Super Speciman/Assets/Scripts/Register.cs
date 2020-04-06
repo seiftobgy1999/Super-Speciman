@@ -46,7 +46,7 @@ public class Register : MonoBehaviour
 
         if (Username != "")
         {
-            if (!System.IO.File.Exists(@"/Users/seifeltobgy/Desktop/Super Speciman/Assets/Data/" + Username + ".txt"))
+            if (!System.IO.File.Exists(@"/Users/seifeltobgy/Desktop/Github/Super-Speciman/Super Speciman/Assets/Data/" + Username + ".txt"))
             {
                 UN = true;
             }
@@ -124,7 +124,7 @@ public class Register : MonoBehaviour
                 Password += hash.ToString();
             }
             form = (Username + Environment.NewLine + Email + Environment.NewLine + Password);
-            System.IO.File.WriteAllText("/Users/seifeltobgy/Desktop/Super Speciman/Assets/Data/" + Username + ".txt", form);
+            System.IO.File.WriteAllText("/Users/seifeltobgy/Desktop/Github/Super-Speciman/Super Speciman/Assets/Data/" + Username + ".txt", form);
             username.GetComponent<InputField>().text = "";
             email.GetComponent<InputField>().text = "";
             password.GetComponent<InputField>().text = "";
